@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-krona: "Krona One", sans-serif;
+    --fonte-mont: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    display: flex; /* Flex container */
+    height: 100vh; /* Altura total da tela */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.apresentacao {
+    display: flex;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+}
+
+.esquerda, .direita {
+    flex: 1; /* Cada seção ocupa 50% da tela */
+    padding: 20px;
+}
+
+.esquerda {
+    background-color: rgb(64, 176, 255);
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.direita__titulo{
+    height: 75px;
+    font-size: 70px;
+    font-family: var(--fonte-krona);
+    color: rgb(0, 0, 151);
+}
+
+.direita__subtitulo{
+height: 80px;
+font-size: 50px;
+font-family: var(--fonte-mont);
+}
+
+.direita__escolher__avatar{
+font-family: var(--fonte-mont);
+height: 40px;
+}
+
+.direita__email, .direita__senha, .direita__criarconta {
+    background-color: rgb(64, 176, 255);
+    height: 60px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte-mont);
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 151);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.direita__email:hover, .direita__senha:hover {
+    background-color: rgb(41, 116, 255);
+    transform: scale(1.05);
+}
+
+.div__login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.direita__criarconta {
+    height: 35px;
+    width: 180px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 151);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.direita__criarconta:hover {
+    background-color: rgb(41, 116, 255);
+    transform: scale(1.1);
+}
+
+
+
+
+.avatares {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 130px;
+}
+
+.avatares__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 30%;
+    border: 3px solid black;
+}
+
+.avatares__avatar:hover{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+.headerDaDireita {
+    display: flex;
+    flex-direction: row;
+    padding: 3% 0 7% 0;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: var(--fonte-mont);
+    align-items: center; /* Alinha verticalmente todos os itens no centro */
+    cursor: pointer;
+}
+
+.headerDowload {
+    background-color: rgb(0, 210, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 113, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
